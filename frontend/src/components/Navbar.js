@@ -14,6 +14,7 @@ import SearchNav from './SearchNav';
 import WorkIcon from '@material-ui/icons/Work';
 import SchoolIcon from '@material-ui/icons/School';
 
+
 class Navbar extends Component {
 
 
@@ -91,6 +92,8 @@ class Navbar extends Component {
                 <ul className="dropdown-content" >
                         <li> <Link  style={{color:'#f6f6f6'}} to="/dashboard"> Dashboard </Link> </li>
                         <li> <Link  style={{color:'#f6f6f6'}} to="/profile"> Edit Profile </Link> </li>
+                        {user &&<li> <Link  style={{color:'#f6f6f6'}} to="/interview"> Interview</Link> </li>}
+                        <hr/>
                         {user && !user.proAccount && <li> <Link  style={{color:'#f6f6f6'}} to="/joinAsProWorker"> Join as Professional Account </Link> </li>}
                         {user && !user.teachAccount && <li> <Link  style={{color:'#f6f6f6'}} to="/joinAsTeacher"> Join as Teacher Account </Link> </li>}
                         <hr/>
@@ -102,6 +105,7 @@ class Navbar extends Component {
                         <hr/>
                         <li> <Link  style={{color:'#f6f6f6'}} to="/updates"> Updates</Link> </li>
                         <hr/>
+                       
                         <li> <Link  style={{color:'#f6f6f6'}} to="/" onClick={signout} > Sign Out </Link> </li>
                 </ul>
         </div>

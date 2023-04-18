@@ -48,7 +48,8 @@ import ExploreJobTeacher from './screens/ExploreJobTeacher';
 import './components/ImageUpload.css'
 import RefundsScreen from './screens/RefundsScreen';
 import WihdrawAmin from './screens/WihdrawAmin';
-
+import Homee from "./Home";
+import Room from "./Room";
 
 
 
@@ -67,6 +68,8 @@ class App extends React.Component {
             
             
             <main>
+            <Route path="/interview" component={Homee} exact></Route>
+           <Route path="/room/:roomID" component={Room} exact></Route>
                 <Route path="/register" component={RegisterScreen} exact></Route>
                 <Route path="/registerSeller" component={SellerRegister} exact></Route>
                 <Route path="/signin" component={signInScreen} exact></Route>

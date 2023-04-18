@@ -23,7 +23,7 @@ app.use(bodyParser.json())
 
 
 
-mongoose.connect("mongodb+srv://admin:admin123@cluster0.tw7fxff.mongodb.net/KhadamniPro?retryWrites=true&w=majority" , {
+mongoose.connect("mongodb+srv://admin:2i7XEzFMAZHnRl5H@cluster0.5gv7uwi.mongodb.net/projet_final?retryWrites=true&w=majority" , {
         useNewUrlParser : true ,
         useCreateIndex : true ,
         useUnifiedTopology : true } , 
